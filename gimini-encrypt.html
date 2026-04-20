@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>System Service</title>
+    <link rel="stylesheet" href="gimini-encrypt.css">
+</head>
+<body>
+
+<div class="app-container">
+    <h2>🔐 Secret Messenger</h2>
+    
+    <label>MESSAGE / ENCODED TEXT</label>
+    <textarea id="input" placeholder="Enter text..."></textarea>
+
+    <label>SECRET KEY</label>
+    <input id="password" type="password" placeholder="Key (e.g. 123)">
+
+    <div class="button-row">
+        <button class="btn-main" onclick="encrypt()">ENCRYPT</button>
+        <button class="btn-main" onclick="decrypt()">DECRYPT</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <label>RESULT</label>
+    <textarea id="output" readonly placeholder="Output will appear here..."></textarea>
+    
+    <div class="button-row">
+        <button class="btn-alt" onclick="clearAll()">CLEAR</button>
+        <button class="btn-alt" onclick="copyResult()">COPY RESULT</button>
+    </div>
+</div>
+
+<script src="gimini-encrypt.js"></script>
+</body>
+</html>
